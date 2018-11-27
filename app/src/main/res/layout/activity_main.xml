@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ListView
+            android:id="@+id/ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/toolbar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="150dp" />
+
+        <TextView
+            android:id="@+id/TxvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginBottom="101dp"
+            android:text="Introduce el id a buscar:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:listSelector="@android:color/holo_blue_dark"/>
+
+        <EditText
+            android:id="@+id/edtIdenti"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/TxvNombre"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginBottom="42dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/TxvNombre"
+            android:layout_alignRight="@+id/TxvNombre"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-19dp"
+            android:layout_marginRight="-19dp"
+            android:layout_marginBottom="42dp"
+            android:text="OK" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnMostrartodos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="18dp"
+            android:clickable="true"
+            android:src="@drawable/clasificacion"
+            app:backgroundTint="@android:color/holo_orange_dark" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

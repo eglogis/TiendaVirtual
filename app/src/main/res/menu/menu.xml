@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Nuevo"
+        android:title="Nuevo Cliente" />
+    <item
+        android:id="@+id/Simple"
+        android:title="Vista Simple" />
+    <item
+        android:id="@+id/Completa"
+        android:title="Vista Completa" />
+    <item
+        android:id="@+id/Modificar"
+        android:title="Modificar" />
+</menu>
